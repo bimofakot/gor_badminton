@@ -17,31 +17,40 @@ Aplikasi kasir mobile berbasis **Flutter** yang dirancang untuk memudahkan opera
 - **Utilities:** `intl`, `share_plus`, `path`
 
 ## 🚀 Cara Menjalankan Project (Local Development)
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi di lingkungan pengembangan lokal Anda:
 
-1. **Clone repository ini:**
-   ```bash
+1. **Clone Repository**
+   Salin repository ini ke laptop Anda menggunakan perintah berikut:
+   ```Bash
    git clone [https://github.com/USERNAME_ANDA/gor_badminton.git](https://github.com/USERNAME_ANDA/gor_badminton.git)
-
-    Masuk ke direktori project:
-    Bash
+2. **Masuk ke direktori project**
+   Masuk ke folder project yang baru saja di-clone:
+   ```Bash
 
     cd gor_badminton
 
-    Install dependensi:
-    Bash
+3. **Install dependensi**
+   Unduh semua library/package yang dibutuhkan oleh Flutter:
+    ```Bash
 
     flutter pub get
 
-    Jalankan aplikasi (Debug Mode):
-    Bash
+4. **Jalankan aplikasi (Debug Mode)**
+   Hubungkan perangkat Android Anda, lalu jalankan perintah:
+    ```Bash
 
     flutter run
 
-📦 Distribusi & Build
+## 📦 Distribusi & Build
+Jika Anda ingin membuat file instalasi (APK) untuk dipasang di HP lain tanpa perlu koding, jalankan perintah ini:
 
-Untuk membuat file instalasi APK milik Anda sendiri:
-Bash
+    ```Bash
 
-flutter build apk --release
+    flutter build apk --release
+**Lokasi File Output:**
+Setelah proses selesai, file APK akan tersedia di:
+`build/app/outputs/flutter-apk/app-release.apk`
 
-File output akan berada di: build/app/outputs/flutter-apk/app-release.apk
+---
+
+Dibuat oleh Bimo di lingkungan CachyOS.
