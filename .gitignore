@@ -51,3 +51,19 @@ android/key.properties
 
 # Data SQLite lokal (biar database percobaan tidak ikut)
 *.db
+
+# --- Tambahan Keamanan GOR Badminton ---
+
+# File Rahasia Firebase
+android/app/google-services.json
+lib/firebase_options.dart
+ios/Runner/GoogleService-Info.plist
+
+# File Logika Update & Database (Opsional tapi Disarankan)
+lib/version_check.dart
+lib/database_helper.dart
+
+# File Hasil Build (WAJIB agar Git tetap ringan)
+*.apk
+*.aab
+build/
