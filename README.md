@@ -1,56 +1,58 @@
-# 🏸 Badminton Cashier - Aplikasi Kasir GOR Pintar
+🏸 Badminton Cashier - Aplikasi Kasir GOR Pintar (v1.1)
 
-Aplikasi kasir mobile berbasis **Flutter** yang dirancang untuk memudahkan operasional Gelanggang Olahraga (GOR) Badminton. Fokus utama aplikasi ini adalah efisiensi transaksi, manajemen harga kustom, dan otomatisasi jadwal lapangan.
+Aplikasi kasir mobile berbasis Flutter yang dirancang untuk efisiensi operasional Gelanggang Olahraga (GOR) Badminton. Versi terbaru ini kini dilengkapi dengan integrasi Cloud Configuration untuk manajemen aplikasi yang lebih dinamis.
+✨ Fitur Unggulan (Terbaru!)
 
-## ✨ Fitur Unggulan
-- **Custom Branding & Pricing:** Pengguna dapat mengubah nama GOR dan mengatur harga sewa (Lapangan, Raket, Kok) secara mandiri melalui menu Pengaturan.
-- **Otomatisasi Jadwal:** Fitur sinkronisasi waktu otomatis yang menghitung durasi main dan jadwal selesai secara presisi.
-- **Statistik Penjualan:** Visualisasi data pemasukan bulanan menggunakan grafik pie yang interaktif.
-- **Struk Digital Professional:** Format struk yang rapi dan transparan, siap dibagikan langsung ke WhatsApp atau Telegram pelanggan.
-- **Keamanan Data Lokal:** Penyimpanan menggunakan SQLite (Database) dan SharedPreferences (Pengaturan) sehingga data tetap aman meski aplikasi ditutup.
+    🆕 Firebase Remote Config: Kendali jarak jauh untuk fitur aplikasi tanpa perlu update manual di sisi pengguna.
 
-## 🛠️ Tech Stack
-- **Framework:** Flutter (Dart)
-- **Database:** SQLite (`sqflite`)
-- **Storage:** `shared_preferences`
-- **Charts:** `fl_chart`
-- **Utilities:** `intl`, `share_plus`, `path`
+    🆕 Smart Auto-Update: Notifikasi pembaruan otomatis yang memastikan pengguna selalu menggunakan versi terbaru langsung dari aplikasi.
 
-## 🚀 Cara Menjalankan Project (Local Development)
-Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi di lingkungan pengembangan lokal Anda:
+    🆕 Dynamic Dark Mode: Antarmuka yang lebih nyaman di mata dengan dukungan tema gelap yang modern.
 
-1. **Clone Repository**
-   Salin repository ini ke laptop Anda menggunakan perintah berikut:
-   ```Bash
-   git clone [https://github.com/USERNAME_ANDA/gor_badminton.git](https://github.com/USERNAME_ANDA/gor_badminton.git)
-2. **Masuk ke direktori project**
-   Masuk ke folder project yang baru saja di-clone:
-   ```Bash
+    Custom Branding & Pricing: Pengaturan nama GOR dan harga sewa (Lapangan, Raket, Kok) secara mandiri.
 
-    cd gor_badminton
+    Otomatisasi Jadwal: Kalkulasi durasi main dan jadwal selesai secara presisi dan otomatis.
 
-3. **Install dependensi**
-   Unduh semua library/package yang dibutuhkan oleh Flutter:
-    ```Bash
+    Struk Digital Professional: Kirim struk rapi langsung ke WhatsApp atau Telegram pelanggan.
 
+    Keamanan Data Lokal: Menggunakan SQLite (Database) dan SharedPreferences untuk penyimpanan data yang stabil.
+
+🛠️ Tech Stack & Integrasi
+
+    Framework: Flutter (Dart)
+
+    Backend Service: Firebase (Remote Config & Analytics)
+
+    Database Lokal: SQLite (sqflite)
+
+    Storage: shared_preferences
+
+    Charts: fl_chart
+
+    Utilities: intl, share_plus, path, url_launcher
+
+🚀 Cara Menjalankan Project (Local Development)
+
+    Clone Repository
+    Salin link repository ini dan jalankan di terminal:
+    git clone https://github.com/bimofakot/gor_badminton.git
+
+    Setup Konfigurasi (PENTING)
+    Karena repository ini bersifat publik, file konfigurasi Firebase (google-services.json) disembunyikan melalui .gitignore. Anda perlu menggunakan file konfigurasi Firebase Anda sendiri di folder android/app/.
+
+    Install Dependensi
+    Jalankan perintah berikut di root folder project:
     flutter pub get
 
-4. **Jalankan aplikasi (Debug Mode)**
-   Hubungkan perangkat Android Anda, lalu jalankan perintah:
-    ```Bash
-
+    Jalankan Aplikasi
+    Pastikan emulator atau perangkat fisik terhubung, lalu jalankan:
     flutter run
 
-## 📦 Distribusi & Build
-Jika Anda ingin membuat file instalasi (APK) untuk dipasang di HP lain tanpa perlu koding, jalankan perintah ini:
+📦 Distribusi & Build
 
-    ```Bash
+Untuk membuat file instalasi (APK):
+flutter build apk --release
 
-    flutter build apk --release
-**Lokasi File Output:**
-Setelah proses selesai, file APK akan tersedia di:
-`build/app/outputs/flutter-apk/app-release.apk`
+Lokasi Output: build/app/outputs/flutter-apk/app-release.apk
 
----
-
-Dibuat oleh Bimo di lingkungan CachyOS.
+Dibuat oleh Bimo Fakot di lingkungan CachyOS (Arch Linux).
